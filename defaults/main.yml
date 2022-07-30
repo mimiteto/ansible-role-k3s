@@ -66,6 +66,10 @@ k3s_server_pod_manifests_urls: []
 #  - url: https://some/url/to/manifest.yml
 #    filename: manifest.yml
 
+# A string, containing custom args for k3s.
+# k3s_args: ""
+k3s_args: --kube-controller-manager-arg pod-eviction-timeout=1m
+
 # Use experimental features in k3s?
 k3s_use_experimental: false
 
